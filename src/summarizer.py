@@ -58,9 +58,9 @@ duck = 3
 Finally, lets output into our final JSON
 
 {
-    "apple" : 5,
+    "apple": 5,
     "orange": 2,
-    "fish" : 2,
+    "fish": 2,
     "duck": 3
 }
 
