@@ -55,10 +55,14 @@ def generate_travel_requests(n=5) -> list[str]:
         prompt=chat_prompt
     )
 
+    
+
     results = []
 
     for _ in range(0, n):
         results.append(chain.run("beach vacation"))
+    
+    print(results, end="\n+ + +\n")
 
     return results
 
@@ -66,6 +70,7 @@ def generate_travel_requests(n=5) -> list[str]:
 # generate some requests
 travel_requests = generate_travel_requests()
 print(travel_requests)
+print("\n\n\n")
 # get the recommendations
 recommendations = generate_travel_recommendations(travel_requests)
 print(recommendations)
